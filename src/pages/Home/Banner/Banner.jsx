@@ -7,11 +7,11 @@ import img6 from '../../../assets/images/banner/6.jpg'
 
 const Banner = () => {
     return (
-        <div className="carousel w-full">
-            <div id="slide1" className="carousel-item relative w-full">
-                <img src={img1} className="w-full" />
+        <div className="carousel w-full rounded-3xl h-[600px]">
+            <div id="slide1" className="carousel-item relative w-full ">
+                <img src={img1} className="w-full " />
                 <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
-                    <a href="#slide4" className="btn btn-circle mr-2 opacity-[0.6]">❮</a>
+                    <a href="#slide6" className="btn btn-circle mr-2 opacity-[0.6]">❮</a>
                     <a href="#slide2" className="btn btn-circle bg-[#FF3811]">❯</a>
                 </div>
             </div>
@@ -33,6 +33,20 @@ const Banner = () => {
                 <img src={img4} className="w-full" />
                 <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
                     <a href="#slide3" className="btn btn-circle mr-2 opacity-[0.6]">❮</a>
+                    <a href="#slide5" className="btn btn-circle bg-[#FF3811]">❯</a>
+                </div>
+            </div>
+            <div id="slide5" className="carousel-item relative w-full">
+                <img src={img5} className="w-full" />
+                <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
+                    <a href="#slide4" className="btn btn-circle mr-2 opacity-[0.6]">❮</a>
+                    <a href="#slide6" className="btn btn-circle bg-[#FF3811]">❯</a>
+                </div>
+            </div>
+            <div id="slide6" className="carousel-item relative w-full">
+                <img src={img6} className="w-full" />
+                <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
+                    <a href="#slide5" className="btn btn-circle mr-2 opacity-[0.6]">❮</a>
                     <a href="#slide1" className="btn btn-circle bg-[#FF3811]">❯</a>
                 </div>
             </div>

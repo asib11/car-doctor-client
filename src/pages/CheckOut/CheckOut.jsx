@@ -7,7 +7,7 @@ import { AuthContext } from "../../providers/AuthProvider";
 const CheckOut = () => {
     const serviceBook = useLoaderData();
     const {user} = useContext(AuthContext);
-    const { title, price, _id } = serviceBook;
+    const { title, price,img, _id } = serviceBook;
     const handleCheckOut = event =>{
         event.preventDefault();
         const form = event.target;
@@ -22,7 +22,8 @@ const CheckOut = () => {
             price: price,
             service_id: _id,
             service: title,
-            phone
+            phone,
+            img
 
         }
         

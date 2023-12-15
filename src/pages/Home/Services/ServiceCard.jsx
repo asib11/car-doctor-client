@@ -16,7 +16,7 @@ const ServiceCard = ({ service }) => {
                     <p>price: ${price}</p>
                     <div className="card-actions">
                         <Link to={`/checkout/${_id}`}>
-                            <button className="btn btn-primary">Buy Now</button>
+                            <button className="btn bg-[#FF3811] text-white">Buy Now</button>
                         </Link>
                     </div>
                 </div>

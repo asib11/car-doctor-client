@@ -30,7 +30,12 @@ const Login = () => {
                 body: JSON.stringify(loggedUser)
             })
             .then(res => res.json())
-            .then(data => console.log(data))
+            .then(data => {
+                console.log(data);
+                //dont use local storage
+                localStorage.setItem('car-access-token', data.token);
+                navigate(from, {replace:true});
+            })
         })
         .then(error => console.log(error))
         

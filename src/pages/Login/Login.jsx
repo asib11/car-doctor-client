@@ -2,6 +2,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import img from '../../assets/images/login/login.svg'
 import { useContext } from 'react';
 import { AuthContext } from '../../providers/AuthProvider';
+import SocialLogin from '../shared/SocialLogin/SocialLogin';
 const Login = () => {
     const location = useLocation();
     const from = location.state?.from?.pathname || '/';
@@ -70,6 +71,7 @@ const Login = () => {
                         </div>
                         <p>Have not an account? <Link className='text-[#FF3811]' to='/signup'>Sign Up</Link></p>
                     </form>
+                    <SocialLogin></SocialLogin>
                 </div>
 
             </div>

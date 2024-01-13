@@ -7,8 +7,8 @@ const SocialLogin = () => {
     const {googleSignIn} = useContext(AuthContext);
     const handleSocialLogin = ()=>{
         googleSignIn()
-        .then( result =>{
-            console.log(result.user)
+        .then( () =>{
+            // console.log(result.user)
         })
         .catch(error => console.log(error))
     }

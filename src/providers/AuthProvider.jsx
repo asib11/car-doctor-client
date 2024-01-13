@@ -42,7 +42,7 @@ const AuthProvider = ({ children }) => {
                 }
                 console.log(user);
                 // navigate(from, {replace:true});
-                fetch('http://localhost:5000/jwt', {
+                fetch('https://car-doctor-server-blush-six.vercel.app/jwt', {
                     method: 'POST',
                     headers: {
                         'content-type': 'application/json'
@@ -51,7 +51,7 @@ const AuthProvider = ({ children }) => {
                 })
                     .then(res => res.json())
                     .then(data => {
-                        console.log(data);
+                        // console.log(data);
                         //dont use local storage
                         localStorage.setItem('car-access-token', data.token);
                         

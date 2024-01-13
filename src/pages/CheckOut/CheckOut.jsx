@@ -28,7 +28,7 @@ const CheckOut = () => {
         }
         
 
-        fetch('http://localhost:5000/bookings',{
+        fetch('https://car-doctor-server-blush-six.vercel.app/bookings',{
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
